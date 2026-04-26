@@ -5,6 +5,7 @@ body {
   background:#020617;
 }
 
+/* Animated BG */
 .bg {
   position:fixed;
   width:100%;
@@ -37,6 +38,10 @@ header {
   transition:0.4s;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
+
 .profile img {
   width:130px;
   border-radius:50%;
@@ -45,6 +50,19 @@ header {
 
 @keyframes float {
   50%{transform:translateY(-10px);}
+}
+
+.chips span {
+  display:inline-block;
+  margin:6px;
+  padding:8px 15px;
+  background:#00f5a0;
+  color:black;
+  border-radius:20px;
+}
+
+.projects {
+  text-align:center;
 }
 
 .project-card {
@@ -57,9 +75,19 @@ header {
 }
 
 .project-card:hover {
-  transform: scale(1.1);
+  transform: rotateY(15deg) scale(1.1);
   background:#00f5a0;
   color:black;
+}
+
+.socials a {
+  margin:10px;
+  font-size:25px;
+  color:white;
+}
+
+.socials a:hover {
+  color:#00f5a0;
 }
 
 .reveal {
